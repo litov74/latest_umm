@@ -102,7 +102,7 @@ namespace API
             services.AddControllers();
             services.AddControllersWithViews()
     .AddNewtonsoftJson(options =>
-    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+    options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore
 );
 
             services.AddRouting(options => options.LowercaseUrls = true);
